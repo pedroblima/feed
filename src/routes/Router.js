@@ -17,9 +17,30 @@ export default function Router() {
         <NavigationContainer>
             <Tab.Navigator initialRouteName='Home'>
 
-                <Tab.Screen name='Home' component={Home} />
-       
-                <Tab.Screen name='Posts' component={Posts} />
+                <Tab.Screen
+                    name='Home'
+                    component={Home}
+                    options={{
+                        tabBarLabel: 'Home',
+                        tabBarIcon: ({ }) => {
+                            return <ion-icon name="people-outline" />
+
+                        }
+
+                    }}
+                />
+
+                <Tab.Screen
+                    name='Posts'
+                    component={Posts}
+                    options={{
+                        tabBarLabel: 'Home',
+                        tabBarIcon: ({ }) => {
+                            return <ion-icon name="eye-outline" />
+
+                        }
+
+                    }} />
 
             </Tab.Navigator>
 
