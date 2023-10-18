@@ -8,6 +8,7 @@ import Home from '../screens/home/Home'
 import Posts from '../screens/posts/Posts'
 
 
+
 const Tab = createBottomTabNavigator()
 const Stack = createStackNavigator()
 
